@@ -1,0 +1,561 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(240, 243, 247, 1);
+    position: relative;
+}
+/* header-section */
+
+header{
+    background-color: rgba(255, 255, 255, 0.92);
+    position: relative;
+    padding: 20px 0;
+}
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerInfo, .headerLang, .headerContact{
+    display: flex;
+    align-items: center;
+}
+
+.dropDown{
+    display: none;
+    transform: translateY(50px);
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropDown li{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+}
+.dropDown li:hover{
+    background-color: #f1f1f1
+}
+.headerLang:hover .dropDown{
+    display: block;
+}
+
+.dropDown li:last-child{
+    border: 1px solid rgba(234, 237, 240, 1);
+}
+.hederLang, .headerContact{
+    margin-left: 15px;
+}
+.headerLang p, .headerContact p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 12.2px;
+}
+.headerLang img, .headerContact img{
+    margin-right: 5px;
+}
+.headerLogo{
+    position: absolute;
+    left: 45%;
+    top: 0%;
+    background-color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: gray 0px 0px 9px 2px ;
+}
+.headerLogo img{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+.login{
+    display: flex;
+    align-items: center;
+    background-color: rgba(234, 237, 240, 1);
+    border: none;
+    outline: none;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.login img{
+    margin-left: 5px;
+}
+
+/* main-section */
+.mainSection{
+    margin: 20px 0;
+    width: 100%;
+}
+.userTitle{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.userTitle li{
+    margin-left: 18px;
+    font-size: 15px;
+    color: rgb(152, 153, 153);
+}
+
+.userTitle li a{
+    color: black;
+    text-decoration: none;
+}
+.userTitle li::before{
+    content: "\2022"; 
+    color: rgb(152, 153, 153); 
+    font-weight: bold;
+    width: 1em; 
+    margin-left: -0.5em;
+}
+.userTitle li:first-child{
+    color: black;
+}
+.main-inner{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+/* user section */
+.userSection{
+    width: 20%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 5px 10px;
+    height: 100%;
+}
+.userProducts-section{
+    width: 75%;
+}
+.userUser{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid rgba(234, 237, 240, 1);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.92);
+}
+.userUser img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.userAds{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid rgba(234, 237, 240, 1);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(234, 237, 240, 1);
+    margin: 10px 0;
+    width: 100%;
+}
+.userAds:hover{
+    background-color: rgba(255, 255, 255, 0.92);
+}
+.userAds img{
+    margin-right: 10px;
+    width: 20px;
+}
+.userAds p{
+    font-size: 13px;
+    font-weight: 500;
+}
+.personalInfo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid rgba(234, 237, 240, 1);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(234, 237, 240, 1);
+    margin: 10px 0;
+    width: 100%;
+}
+.personalInfo:hover{
+    background-color: rgba(255, 255, 255, 0.92);
+}
+.personalInfo img{
+    margin-right: 10px;
+    width: 20px;
+}
+.personalInfo p{
+    font-size: 13px;
+    font-weight: 500;
+}
+.userMenu{
+    border-top: 1px solid rgba(234, 237, 240, 1);
+    border-bottom: 1px solid rgba(234, 237, 240, 1);
+    margin: 20px 0;
+}
+.userSection a{
+    background-color: rgba(234, 237, 240, 1);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding: 6px 0;
+    border-radius: 10px;
+    color: black;
+    font-size: 14px;
+}
+.userSection a:hover{
+    background-color: rgb(214, 8, 8);
+    color: white;
+}
+.userSection a img{
+    width: 15px;
+    margin-right: 5px;
+}
+
+/* userProducts section */
+
+.userProducts-section{
+    width: 75%;
+}
+.productTop-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.productTop-section h2{
+    color: black;
+    font-size: 30px;
+}
+.productTop-section a{
+    background-color: rgb(57, 143, 243);
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.products-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.productBox{
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.92);
+    margin: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.productBox img{
+    width: 100%;
+    border-radius: 10px;
+}
+.productContent{
+    padding: 10px 5px;
+}
+.city{
+    font-size: 14px;
+    background-color: rgba(234, 237, 240, 1);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+ 
+}
+.productListSection p{
+    margin-top: 10px;
+    color: rgb(143, 143, 143);
+    font-size: 14px;
+}
+.productName{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.tel{
+    color: rgb(143, 143, 143);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.price{
+    color: black;
+    font-size: 18px;
+}
+.price span{
+    color: royalblue;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-image: url(/images/Elements.png);
+    padding: 80px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.footer-inner{
+ text-align: center;
+}
+.footerLogo img{
+    width: 100px;
+    position: absolute;
+    left: 47%;
+    top: 0px;
+}
+.footerContent{
+    text-align: center;
+}
+.footerAbout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.footerAbout1{
+    width: 30%;
+}
+.productBox a{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 1142px) {
+    .search input{
+        right: 30%;
+    }
+    .search button{
+        right: 30.5%;
+    }
+    .userTitle li{
+        font-size: 12px;
+    }
+}
+@media  screen and (max-width: 988px) {
+    .search input{
+        right: 28%
+    }
+    .search button{
+        right: 28.5%;
+    }
+    .container{
+        width: 100%;
+        max-width: 970px;
+        margin: 0 auto;
+    }
+    
+}
+@media screen and (max-width: 891px){
+    .container{
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .products-inner{
+        width: 100%;
+    }
+    .userProducts-section{
+        width: 60%;
+    }
+    .userSection{
+        width: 30%;
+    }
+    .productContent-inner .city{
+        font-size: 10px;
+    }
+    .productBox{
+        width: 31%;
+        margin-right: 10px;
+    }
+    .productName{
+        font-size: 14px;
+        font-weight: bolder;
+    }
+    .productContent-inner .tel{
+        font-size: 12px;
+    }
+    .productContent-inner .price{
+        font-size: 14px;
+    }
+}
+@media  screen and (max-width: 769px) {
+    .search input{
+        right: 23%
+    }
+    .search button{
+        right: 23.5%;
+    }
+    .container{
+        width: 100%;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    .productTop-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .productTop-section h2{
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+  
+    .productTop-section a{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 716px) {
+    .container{
+        width: 100%;
+        max-width: 680px;
+    }
+    .productBox{
+        width: 45%;
+    }
+}
+@media  screen and (max-width: 685px) {
+    .search input{
+        right: 19%
+    }
+    .search button{
+        right: 19.5%;
+    }
+    .headerLogo{
+        width: 70px;
+        top: 20%;
+        border-radius: 10px;
+    }
+    .headerLogo img{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        max-width: 670px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .container{
+        width: 100%;
+        max-width: 645px;
+    }
+}
+@media screen and (max-width: 601px) {
+    .categorySection{
+        width: 40%;
+        margin: 10px 20px;
+    }
+    .header{
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        max-width: 575px;
+        margin: 0 auto;
+    }
+    .headerLang p{
+        font-size: 10px;
+    }
+    .headerLang img{
+        width: 70%;
+    }
+    .headerContact p{
+        font-size: 10px;
+    }
+    .headerContact img{
+        width: 10%;
+    }
+    .headerLogin button{
+        font-size: 10px;
+    }
+    .login img{
+       width: 30%;
+    }
+    .search input{
+        max-width: 300px;
+    }
+    .search button{
+        padding: 6px 15px;
+        top: 105px;
+        right: 20%;
+    }
+    .container{
+        width: 100%;
+        max-width: 540px;
+        margin: 0 auto;
+    }
+    .main-inner{
+        display: flex;
+        flex-direction: column;
+    }
+    .userSection{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .userProducts-section{
+        width: 100%;
+    }
+}   
+@media screen and (max-width: 447px) {
+    .headerContact{
+        display: none;
+    }
+}
+@media screen and (max-width: 399px){
+    .search input{
+        right: 10%;
+    }
+    .search button{
+        right: 12%;
+    }
+    .container{
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+    .footerAbout{
+        justify-content: center;
+    }
+    .footerAbout1{
+        font-size: 12px;
+        width: 100%;
+    }
+    .footerLogo img{
+        width: 20%;
+        top: -20px;
+    }
+    .footerAbout{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footerAbout1{
+        width: 50%;
+    }
+    .footer-inner p{
+        font-size: 10px;
+    }
+
+}

@@ -1,0 +1,563 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(240, 243, 247, 1);
+}
+header{
+    background-color: rgba(255, 255, 255, 0.92);
+    position: relative;
+    padding: 20px 0;
+}
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerInfo, .headerLang, .headerContact{
+    display: flex;
+    align-items: center;
+}
+
+.dropDown{
+    display: none;
+    transform: translateY(50px);
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropDown li{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+}
+.dropDown li:hover{
+    background-color: #f1f1f1
+}
+.headerLang:hover .dropDown{
+    display: block;
+}
+
+.dropDown li:last-child{
+    border: 1px solid rgba(234, 237, 240, 1);
+}
+.hederLang, .headerContact{
+    margin-left: 15px;
+}
+.headerLang p, .headerContact p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 12.2px;
+}
+.headerLang img, .headerContact img{
+    margin-right: 5px;
+}
+.headerLogo{
+    position: absolute;
+    left: 45%;
+    top: 0%;
+    background-color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: gray 0px 0px 9px 2px ;
+}
+.headerLogo img{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+.login{
+    display: flex;
+    align-items: center;
+    background-color: rgba(234, 237, 240, 1);
+    border: none;
+    outline: none;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.login img{
+    margin-left: 5px;
+}
+.pageList{
+    margin: 20px 0;
+}
+.pageList-inner{
+    display: flex;
+    align-items: center;
+
+}
+.pageList-inner li{
+    margin-right: 10px;
+}
+.mainSection{
+    margin: 20px 0;
+}
+.pageList{
+    display: flex;
+    align-items: center;
+}
+.pageList li{
+    margin-right: 10px;
+}
+.mainSection-inner{
+   display: flex;
+   
+}
+.filterSection{
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 10px;
+    padding: 10px ;
+    margin-right: 60px;
+    min-height: 500px;
+    height: 100%;
+}
+
+.filterTitle{
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.filterMenu label {
+  display: block;
+  margin: 10px 0;
+  border-bottom: 1px solid rgba(234, 237, 240, 1);
+  padding-bottom: 5px;
+}
+.priceFilter label{
+    display: block;
+    margin: 10px 0;
+    border-bottom: 1px solid rgba(234, 237, 240, 1);
+    padding-bottom: 5px ;
+}
+.priceFilter label input{
+    margin-right: 10px;
+}
+.priceFilter p{
+    color: rgb(143, 143, 143);
+    font-size: 14px;
+}
+.btn{
+    margin-top: 10px;
+    background-color: royalblue;
+    font-size: 16px;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 90%;
+}
+.filterBtn{
+    text-align: center;
+}
+.region p{
+    font-size: 13px;
+    color: rgb(143, 143, 143);
+    margin: 10px 0;
+}
+.cityList{
+    width: 100%;
+    background-color: rgba(234, 237, 240, 1);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+input[type=checkbox], input[type=radio] {
+    accent-color: royalblue;
+  }
+
+.productSection{
+    width: 70%;
+}
+.searchInput {
+    position: relative;
+    width: 90%;
+}
+.searchInput input{
+    padding: 10px 10px 10px 40px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgba(234, 237, 240, 1);
+    outline: royalblue;
+
+}
+.productSearch{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.searchInput img{
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    width: 15px;
+    top: 30%;
+    left: 2%;
+}
+.searchFormat{
+    display: flex;
+    align-items: center;
+    width: 15%;
+    margin-left: 20px;
+}
+.fa-filter{
+    display: none;
+ }
+ .fa-filter::before{
+    display: none;
+ }
+
+.searchFormat img{
+    width: 25px;
+    margin-right: 10px;
+}
+.productList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.productBox{
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.92);
+    margin: 20px 0;
+    border-radius: 10px;
+}
+.productBox img{
+    width: 100%;
+    border-radius: 10px;
+}
+.productContent{
+    padding: 10px 5px;
+}
+.city{
+    font-size: 14px;
+    background-color: rgba(234, 237, 240, 1);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+ 
+}
+.productListSection p{
+    margin-top: 10px;
+    color: rgb(143, 143, 143);
+    font-size: 14px;
+}
+.productName{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.tel{
+    color: rgb(143, 143, 143);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.price{
+    color: black;
+    font-size: 18px;
+}
+.price span{
+    color: royalblue;
+}
+.active{
+    width: 100%;
+}
+.active a{
+   width: 100%;
+   display: flex;
+   cursor: pointer;
+}
+.active a .productImg{
+    width: 15%;
+}
+.active a .productImg img{
+    width: 100%;
+}
+.active a .productContent-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.active a .productContent{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+footer{
+    width: 100%;
+    background-image: url(/images/bg-footer.png);
+    padding: 80px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.footerLogo img{
+    width: 100px;
+    position: absolute;
+    left: 47%;
+    top: 0px;
+}
+.footerContent{
+    text-align: center;
+}
+.footerAbout{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+}
+.footerAbout1{
+    width: 30%;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1142px) {
+    .search input{
+        right: 30%;
+    }
+    .search button{
+        right: 30.5%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .fa-filter::before{
+        display: inline;
+    }
+    .filterSection{
+        width: 50%;
+        margin: 0 auto;
+        display: none;
+        position: fixed;
+        z-index: 2;
+        top: 25%;
+        height: 100%;
+        max-height: 600px;
+    }
+    .productSection{
+        width: 90%;
+    }
+    .container{
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+       
+    }
+    .mainSection-inner{
+       display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+     }
+
+}
+@media  screen and (max-width: 988px) {
+    .search input{
+        right: 28%
+    }
+    .search button{
+        right: 28.5%;
+    }
+    .container{
+        width: 100%;
+        max-width: 970px;
+        margin: 0 auto;
+    }
+}
+
+@media  screen and (max-width: 769px) {
+    .search input{
+        right: 23%
+    }
+    .productName, .productContent .price {
+        font-size: 16px;
+    }
+    .productContent .city{
+        font-size: 10px;
+    }
+    .productContent .tel{
+        font-size: 12px;
+    }
+
+    .search button{
+        right: 23.5%;
+    }
+    .container{
+        width: 100%;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+@media  screen and (max-width: 685px) {
+    .search input{
+        right: 19%
+    }
+    .search button{
+        right: 19.5%;
+    }
+    .headerLogo{
+        width: 70px;
+        top: 20%;
+        border-radius: 10px;
+    }
+    .headerLogo img{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        max-width: 670px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .container{
+        width: 100%;
+        max-width: 645px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .header{
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        max-width: 575px;
+        margin: 0 auto;
+    }
+    .headerLang p{
+        font-size: 10px;
+    }
+    .headerLang img{
+        width: 70%;
+    }
+    .headerContact p{
+        font-size: 10px;
+    }
+    .headerContact img{
+        width: 10%;
+    }
+    .headerLogin button{
+        font-size: 10px;
+    }
+    .login img{
+       width: 30%;
+    }
+    .search input{
+        max-width: 300px;
+    }
+    .search button{
+        padding: 6px 15px;
+        top: 105px;
+        right: 20%;
+    }
+    .container{
+        width: 100%;
+        max-width: 540px;
+        margin: 0 auto;
+    }
+}   
+@media screen and (max-width: 600px) {
+    .productBox{
+        width: 45%;
+    }
+    .active{
+        width: 100%;
+    }
+    .active {
+        display: flex;
+        align-items: center;
+
+    }
+    .active .productImg img{
+       width: 100%;
+       transform: translateY(15px);
+    }
+}
+@media screen and (max-width: 481px) {
+    .searchInput {
+        display: none;
+    }
+    .productSearch{
+       justify-content: right;
+        width: 90%;
+    }
+    .container{
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .productSection h1{
+        font-size: 25px;
+    }
+    .headerContact{
+        display: none;
+    }
+    .pageList{
+        display: none;
+    }
+}
+@media screen and (max-width: 447px) {
+    .headerContact{
+        display: none;
+    }
+    .footerAbout{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footerAbout1{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 399px){
+    .search input{
+        right: 10%;
+    }
+    .search button{
+        right: 12%;
+    }
+    .container{
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+    .footerAbout{
+        justify-content: center;
+    }
+    .footerAbout1{
+        font-size: 12px;
+        width: 100%;
+    }
+    .footerLogo img{
+        width: 20%;
+        top: -20px;
+    }
+
+}

@@ -1,0 +1,585 @@
+[
+    {
+        "categoryName":"Для женщин",
+        "categoryIcon": "images/categories/women.png",
+        "categories":[
+            {
+                "category": "Туфли",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Timur",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    },
+                    {
+                        "productId": 1,
+                        "productName": "Adidas",
+                        "price":140000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Timur",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    },
+                    {
+                        "productId": 1,
+                        "productName": "Nike",
+                        "price":990000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Timur",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Красота",
+        "categoryIcon": "images/categories/beauty.png",
+        "categories":[
+            {
+                "category": "Макияж",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Faruh",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    },
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Ikrom",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    },
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Alisher",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    },
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Alisher",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    },
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Paxlavon",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Бытовая техника",
+        "categoryIcon": "images/categories/appliances.png",
+        "categories":[
+            {
+                "category": "Микроволновая печь",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Muhammad",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"для мужчин",
+        "categoryIcon": "images/categories/man.png",
+        "categories":[
+            {
+                "category": "Часы",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Rolex",
+                        "price":1130000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Muhammad",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Здоровья",
+        "categoryIcon": "images/categories/health.png",
+        "categories":[
+            {
+                "category": "Таблетки",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":10000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Amina",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Электроника",
+        "categoryIcon": "images/categories/electronics.png",
+        "categories":[
+            {
+                "category": "Телефон",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Iphone X",
+                        "price":1530000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Timur",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Детские товары",
+        "categoryIcon": "images/categories/child.png",
+        "categories":[
+            {
+                "category": "Игрушки",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Rajabbek",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Украшения и бижутерия",
+        "categoryIcon": "images/categories/jewelery.png",
+        "categories":[
+            {
+                "category": "Сережки",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Laylo",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Домашняя утварь",
+        "categoryIcon": "images/categories/house.png",
+        "categories":[
+            {
+                "category": "Сковородки",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Aziz",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Обувь",
+        "categoryIcon": "images/categories/shoes.png",
+        "categories":[
+            {
+                "category": "Кросовки",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Sardor",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Канцелярия",
+        "categoryIcon": "images/categories/school.png",
+        "categories":[
+            {
+                "category": "Ручки",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Shoxrux",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Спорт и отдых",
+        "categoryIcon": "images/categories/holiday.png",
+        "categories":[
+            {
+                "category": "Полатка",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Aznavur",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Авто товары",
+        "categoryIcon": "images/categories/car-service.png",
+        "categories":[
+            {
+                "category": "Запчасти",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Damir",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Новые легковые автомобили",
+        "categoryIcon": "images/categories/car.png",
+        "categories":[
+            {
+                "category": "Ласетти",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Damir",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Мототранспорт",
+        "categoryIcon": "images/categories/bike.png",
+        "categories":[
+            {
+                "category": "Ява",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Ikrom",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Дача, сады и огороды",
+        "categoryIcon": "images/categories/nature.png",
+        "categories":[
+            {
+                "category": "Поливочный шланг",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Faruh",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Личная гигиена",
+        "categoryIcon": "images/categories/washing.png",
+        "categories":[
+            {
+                "category": "салфетки",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Kamila",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Аксесуары",
+        "categoryIcon": "images/categories/work.png",
+        "categories":[
+            {
+                "category": "Чехолы",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Rajabbek",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Новые легковые автомобили",
+        "categoryIcon": "images/categories/shoes.png",
+        "categories":[
+            {
+                "category": "Спарк",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Rajabbek",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Строительство и ремонт",
+        "categoryIcon": "images/categories/employee.png",
+        "categories":[
+            {
+                "category": "Мотажный клей",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Alisher",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName":"Сумки и чемоданы",
+        "categoryIcon": "images/categories/school-equipments.png",
+        "categories":[
+            {
+                "category": "Чемодан",
+                "productsContent":[
+                    {
+                        "productId": 1,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Muhammad",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    
+]

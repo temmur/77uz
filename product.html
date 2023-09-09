@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="headerInfo">
+                    <div class="headerLang">
+                        <img src="images/languageRu.png" alt="">
+                        <p>Русский
+                            <ul class="dropDown">
+                                <li>Русский</li>
+                                <li>Английский</li>
+                            </ul>
+                        </p>
+                        
+                    </div>
+                    <div class="headerContact">
+                        <img src="images/phone.png" alt="">
+                        <p>+998 88 500 50 05</p>
+                    </div>
+                </div>
+                <div class="headerLogo">
+                   <a href="main.html"> <img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="headerLogin">
+                    <button class="login">Войти <img src="images/login-04.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <div class="mainSection">
+      <div class="container">
+        <ul class="pageList">
+            <li>Главная</li>
+            <li>Результаты поиска</li>
+           </ul>
+        <div class="mainSection-inner">
+            <div class="filterSection">
+                <h2 class="filterTitle">Фильтр</h2>
+                <div class="region">
+                    <p>Регион</p>
+                    <select id="city" class="cityList">
+                        <option value="hide">Все </option>
+                        <option value="tashkent">Ташкент</option>
+                        <option value="bukhara">Бухара</option>
+                        <option value="samarkand">Самарканд</option>
+                        <option value="karshi">Карши</option>
+                        <option value="nukus">Нукус</option>
+                        <option value="karakhalpakistan">Каракалпакистан</option>
+                        <option value="navai">Наваи</option>
+                    </select> 
+                    <p>Район</p>
+                    <select id="reg" class="cityList">
+                        <option value="hide">Все </option>
+                        <option value="tashknet">Ташкент</option>
+                        <option value="bukhara">Бухара</option>
+                        <option value="samarkand">Самарканд</option>
+                        <option value="karshi">Карши</option>
+                        <option value="nukus">Нукус</option>
+                        <option value="karakhalpakistan">Каракалпакистан</option>
+                        <option value="navai">Наваи</option>
+                    </select> 
+                </div>
+                <div class="priceFilter">
+                    <p>Сортировать</p>
+                    <label for=""><input type="radio">Дешевые сперва</label>
+                    <label for=""><input type="radio">Дорогие сперва</label>
+                    <label for=""><input type="radio">Новые сперва</label>
+                </div>
+                <div class="filterMenu">
+                    <p>Подкатегории</p>
+                    <label>
+                        <input type="checkbox" class="option-input checkbox" CHECKED />
+                        Ноутбук
+                      </label>
+                      <label>
+                        <input type="checkbox" class="option-input checkbox" CHECKED />
+                        Лицо
+                      </label>
+                      <label>
+                        <input type="checkbox" class="option-input checkbox" CHECKED />
+                        Телефон
+                      </label>
+                      <label>
+                        <input type="checkbox" class="option-input checkbox" CHECKED />
+                        Планшет
+                      </label>
+                      <label>
+                        <input type="checkbox" class="option-input checkbox" CHECKED />
+                        Самокат
+                      </label>
+                </div>
+                <div class="btnFilter">
+                    <button class=btn>Применить фильтр</button>
+                </div>
+            </div>
+            <div class="productSection">
+                <h1>Результаты поиска</h1>
+                <div class="productSearch">
+                    <div class="searchInput">
+                        <input type="text"> 
+                        <img src="images/search.png" alt="">
+                    </div>
+                    <div class="searchFormat">
+                        <img class="btnBlock" src="images/list.png" alt="">
+                        <img class="btnGrid" src="images/grid-01.png" alt="">
+                        <i class="fa-solid fa-filter"></i>
+                    </div>
+                </div>
+                <div class="productListSection">
+                    <p>Мы нашли 156 объявлений</p>
+                    <div class="productList">
+                        <!-- <div class="productBox">
+                            <img src="https://m.media-amazon.com/images/I/61ClL2FC6VL._AC_UF1000,1000_QL80_.jpg" alt="">
+                            <div class="productContent">
+                                <p class="city">г. Ташкент</p>
+                                <h4 class="productName">Кепка US-Polo</h4>
+                                <p class="tel">+99897 777-77-37</p>
+                                <h4 class="price">2 549 000 <span>uzs</span></h4>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footerLogo">
+                    <a href="product.html"><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="footerContent">
+                    <div class="footerAbout">
+                        <div class="footerAbout1">
+                            <img src="images/symbol.png" alt="">
+                            <p>Доска объявлений</p>
+                        </div>
+                        <div class="footerAbout1">
+                            <img src="images/symbol.png" alt="">
+                            <p>Условия пользования</p>
+                        </div>
+                        <div class="footerAbout1">
+                            <img src="images/symbol.png" alt="">
+                            <p>+998914074799</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Js/product.js"></script>
+</body>
+</html>
