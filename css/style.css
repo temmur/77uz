@@ -110,7 +110,7 @@ header{
 }
 .search input{
     position: absolute;
-    right: 38%;
+    right: 35%;
     top: 100px;
     max-width: 400px;
     width: 100%;
