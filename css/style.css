@@ -341,7 +341,7 @@ footer{
 }
 @media  screen and (max-width: 988px) {
     .search a{
-        right: 28%
+        right: 30.5%
     }
     .search button{
         right: 28.5%;
@@ -350,6 +350,14 @@ footer{
         width: 100%;
         max-width: 970px;
         margin: 0 auto;
+    }
+}
+@media screen and (max-width: 934px) {
+    .search a{
+        right: 26%;
+    }
+    .search input{
+        right: 26%;
     }
 }
 @media  screen and (max-width: 769px) {
