@@ -312,7 +312,7 @@ input[type=checkbox], input[type=radio] {
 }
 footer{
     width: 100%;
-    background-image: url(/images/bg-footer.png);
+    background-image: url(/images/Elements.png);
     padding: 80px 0;
     background-position: center;
     background-repeat: no-repeat;
@@ -331,7 +331,6 @@ footer{
 .footerAbout{
     display: flex;
     align-items: center;
-    margin-top: 40px;
     justify-content: center;
 }
 .footerAbout1{
@@ -539,6 +538,10 @@ footer{
     .filterSection{
         width: 100%;
     }
+    .footerLogo img{
+        left: 39%;
+        top: 5%;
+    }
 }
 @media screen and (max-width: 399px){
     .search input{
@@ -560,11 +563,12 @@ footer{
         width: 100%;
     }
     .footerLogo img{
-        width: 20%;
-        top: -20px;
+        width: 25%;
+        top: 10%;
+        left: 38%;
     }
     .filterSection{
         top: 15%;
     }
-
+    
 }
