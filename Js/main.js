@@ -2,6 +2,8 @@ let productData = null
 let categoryMain = document.querySelector('.categoryMain')
 let adsSection = document.querySelector('.ads-inner')
 let readMore = document.querySelector('.readMore')
+let dropDownBoxList = document.querySelector('.drop-down-box-list')
+
 fetch('Js/products.json').then(response=> response.json()).then(data =>{
     productData = data
     getProducts()
@@ -10,11 +12,13 @@ function getProducts(){
    categoryMain.innerHTML = '';
    adsSection.innerHTML = ''
    if(productData !== null){
-    productData.forEach(product => {
+    productData.forEach((product,index) => {
         categorySection = document.createElement('div');
         categorySection.classList.add('categorySection')
-        categorySection.setAttribute("dropDownList", "")
+        categorySection.setAttribute("dropDownList", "dropDownLists")
         categorySection.innerHTML=`
+
+        <div class="dropdown">
         <div class="categorySection-inner">
         <div class="categoryLogo">
         <img src="${product.categoryIcon}" alt="">
@@ -30,7 +34,6 @@ function getProducts(){
         `
         categoryMain.appendChild(categorySection)
 
-    
 
         adsCard= document.createElement('div')
         adsCard.classList.add('ads-card')
@@ -78,3 +81,27 @@ let currentItem = 4;
         //     }
         // })
     
+
+        // window.addEventListener('click', function(event){
+        //     if(event.target.hasAttribute('language')){
+        //         let lang = document.querySelector('.mainLang')
+        //          lang.innerHTML = 
+        //     }
+        // })
+
+        function changeLang(value){
+            let mainLang = document.querySelector('.mainLang')
+            mainLang.innerHTML = value
+        }
+
+        let search = document.querySelector('.searchValue')
+
+        let searchBtn = document.querySelector('.searchBtn').addEventListener('click', function(e){
+            e.preventDefault()
+           let searchValue = search.value
+           localStorage.setItem('value', searchValue)
+           search.value = ''
+           window.location.href = "product.html"
+        })
+        
+       

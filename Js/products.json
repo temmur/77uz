@@ -20,7 +20,7 @@
                         }
                     },
                     {
-                        "productId": 1,
+                        "productId": 2,
                         "productName": "Adidas",
                         "price":140000,
                         "city": "Tashkent",
@@ -33,7 +33,7 @@
                         }
                     },
                     {
-                        "productId": 1,
+                        "productId": 3,
                         "productName": "Nike",
                         "price":990000,
                         "city": "Tashkent",
@@ -57,7 +57,7 @@
                 "category": "Макияж",
                 "productsContent":[
                     {
-                        "productId": 1,
+                        "productId": 4,
                         "productName": "Loro Piano",
                         "price":150000,
                         "city": "Tashkent",
@@ -70,7 +70,7 @@
                         }
                     },
                     {
-                        "productId": 1,
+                        "productId": 5,
                         "productName": "Loro Piano",
                         "price":150000,
                         "city": "Tashkent",
@@ -83,7 +83,7 @@
                         }
                     },
                     {
-                        "productId": 1,
+                        "productId": 6,
                         "productName": "Loro Piano",
                         "price":150000,
                         "city": "Tashkent",
@@ -96,7 +96,7 @@
                         }
                     },
                     {
-                        "productId": 1,
+                        "productId": 7,
                         "productName": "Loro Piano",
                         "price":150000,
                         "city": "Tashkent",
@@ -109,7 +109,147 @@
                         }
                     },
                     {
-                        "productId": 1,
+                        "productId": 8,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Paxlavon",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            },
+            {
+                "category": "Духи",
+                "productsContent":[
+                    {
+                        "productId": 4,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Faruh",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    },
+                    {
+                        "productId": 5,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Ikrom",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    },
+                    {
+                        "productId": 6,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Alisher",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    },
+                    {
+                        "productId": 7,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Alisher",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    },
+                    {
+                        "productId": 8,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Paxlavon",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    }
+                ]
+            },
+            {
+                "category": "Краска для волос",
+                "productsContent":[
+                    {
+                        "productId": 4,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Faruh",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    },
+                    {
+                        "productId": 5,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Ikrom",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    },
+                    {
+                        "productId": 6,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Alisher",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    },
+                    {
+                        "productId": 7,
+                        "productName": "Loro Piano",
+                        "price":150000,
+                        "city": "Tashkent",
+                        "productImg": "https://appleinsider.ru/wp-content/uploads/2022/09/iPhone_14_pro_appleinsider_00006.jpg",
+                        "productImg2": "https://appleinsider.ru/wp-content/uploads/2022/10/iphone_13_pro_14_pro_battery_test_aod_with_player-740x493.jpg",
+                        "userInfo":{
+                            "userName": "Alisher",
+                            "UserId": 1,
+                            "userPhone": 998914074799
+                        }
+                    },
+                    {
+                        "productId": 8,
                         "productName": "Loro Piano",
                         "price":150000,
                         "city": "Tashkent",
@@ -133,7 +273,7 @@
                 "category": "Микроволновая печь",
                 "productsContent":[
                     {
-                        "productId": 1,
+                        "productId": 9,
                         "productName": "Loro Piano",
                         "price":150000,
                         "city": "Tashkent",

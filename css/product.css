@@ -337,6 +337,17 @@ footer{
     width: 30%;
     margin-top: 20px;
 }
+.noResult{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.noResult img{
+    width: 20%;
+    margin: 0 auto;
+}
 
 @media screen and (max-width: 1142px) {
     .search input{
