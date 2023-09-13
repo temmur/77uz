@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
@@ -30,7 +30,7 @@
                     <img src="images/logo.png" alt="">
                 </div>
                 <div class="headerLogin">
-                    <button class="login">Войти <img src="images/login-04.png" alt=""></button>
+                    <button class="login">Войти <img src="images/login-04.png" alt="" class="modal-on"></button>
                 </div>
             </div>
         </div>
@@ -100,6 +100,7 @@
     <footer>
         <div class="container">
             <div class="footer-inner">
+                <p>77.uz marketplace - это виртуальная платформа в Узбекистане, которая облегчает <br> покупки и продажи, связывая продавцов с потенциальными клиентами. </p>
                 <div class="footerLogo">
                     <img src="images/logo.png" alt="">
                 </div>
@@ -122,6 +123,63 @@
             </div>
         </div>
     </footer>
+    <!-- register section -->
+    <div class="register">
+        <div class="registerCard">
+            <div class="registerCard-title">
+                <h2>Добро пожаловать!</h2>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <p>Войти в систему чтобы торговать в системе</p>
+            <form action="">
+                <label for="Login">Логин</label>
+                <input id="Login" type="text" placeholder="Введите логин">
+                <label for="Password">Пароль</label>
+                <input form="Password" id="password"  type="text" placeholder="Введите пароль">
+                <a href="">Забыли пароль?</a>
+            </form>
+        <div class="registerCard-btn">
+            <button class="loginActive" id="submit">Войти</button>
+            <p>Хотите стать продавцом?</p>
+            <button class="logon">Подать заявку</button>
+        </div>
+        </div>
+        <!-- create account -->
+        <div class="createAccount">
+            <div class="registerCard-title">
+                <h2>Добро пожаловать!</h2>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <p>Войти в систему чтобы торговать в системе</p>
+            <form action="">
+                <label for="FullName">Ф.И.О</label>
+                <input id="Login" type="text" placeholder="Введите вашу Ф.И.О.">
+                <label for="Password">Название продукта</label>
+                <input form="Password" type="text" placeholder="Введите название продукта">
+                <label for="cars">Категория</label>
+                    <select name="cars" id="cars">
+                    <option value="refregirator">Холодильник</option>
+                    <option value="shelf">Шкаф</option>
+                    <option value="monitor">Монитор</option>
+                    <option value="car">Машина</option>
+                    </select>
+                    <label for="Categoryy">Телефон номер</label>
+                    <div class="phone-input">
+                        <span>+998</span>
+                        <input type="text" placeholder="(00)-000-00-00" data-inputmask="'mask': '(99) 999-99-99'">
+                    </div>
+            </form>
+        <div class="createCard-btn">
+            <button class="loginActive">Подать заявку</button>
+            <p>Если вы продавец, войдите на платформу</p>
+            <button class="logon">Войти</button>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js
+    "></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js
+    "></script>
     <script src="Js/main.js"></script>
 </body>
 </html>

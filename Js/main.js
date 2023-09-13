@@ -103,5 +103,51 @@ let currentItem = 4;
            search.value = ''
            window.location.href = "product.html"
         })
+
         
-       
+        $(":input").inputmask();
+
+        $("#phone").inputmask({"mask": "(999) 999-9999"});
+
+    function login(){
+        let username = $("#Login").val()
+        let password = $("#password").val()
+        
+        fetch('Js/userData.json').then(response => response.json())
+        .then(data => {
+            userList = data
+           for (let i = 0;i<userList.length;i++){
+            let user = userList[i]
+          
+
+            if(user.username == username && user.password == password){
+                console.log("keldi")
+                return " "
+            }
+           }
+           console.log("user yoki parol xato")
+        })
+        
+    }
+
+    $("#submit").click(el=>{
+        login()
+    })
+
+    function modalFunc(){
+
+        let closeModal = document.querySelector('.fa-xmark')
+        let modalSection = document.querySelector('.register')
+        closeModal.addEventListener('click', function(){
+            modalSection.style.display = 'none'
+            console.log(modalSection)
+        })
+   
+        let modalOn = document.querySelector('.modal-on')
+        modalOn.addEventListener('click', function(){
+            modalSection.style.display = "block"
+        })
+
+        
+    }
+    modalFunc()

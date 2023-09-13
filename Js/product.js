@@ -8,6 +8,8 @@ fetch('Js/products.json').then(response => response.json()).then(data => {
 
 let i = 0
 function fetchProducts() {
+    productSection.innerHTML = ""
+
     let result = [];
     let products = product.filter((e) => {
             subcategory = e.categories.filter((e)=>{
@@ -21,6 +23,7 @@ function fetchProducts() {
         // return e.categories[0].category == localStorage.getItem('value')
     })
 
+   
     if (result.length != 0) {
         let x = localStorage.getItem('value')
       
@@ -61,7 +64,7 @@ function fetchProducts() {
             });
         
     } else {
-        console.log(typeof i.category);
+  
         let noResult = document.createElement('div')
         noResult.classList.add('noResult')
         noResult.innerHTML = `
@@ -88,25 +91,12 @@ function getLocalStorage() {
 
 getLocalStorage()
 
-
-
-// let productBox = document.createElement('div')
-// productBox.classList.add('productBox')
-// productBox.innerHTML = `
-// <a href="product-inner.html">
-// <div class="productImg">
-// <img src="https://m.media-amazon.com/images/I/61ClL2FC6VL._AC_UF1000,1000_QL80_.jpg" alt="">
-// </div>
-// <div class="productContent">
-//   <div class="productContent-inner">
-//   <p class="city">г. Ташкент</p>
-//   <h4 class="productName">Кепка US-Polo</h4>
-//   </div>
-//   <div class="productContent-inner">
-//   <p class="tel">+99897 777-77-37</p>
-//   <h4 class="price">2 549 000 <span>uzs</span></h4>
-//   </div>
-// </div>
-// </a>
-// `
-// productSection.appendChild(productBox)
+let search = document.querySelector('.search')
+let searchBtn = document.querySelector('.searchBtn').addEventListener('click', function(e){
+    e.preventDefault()
+   let searchValue = search.value
+   localStorage.setItem('value', searchValue)
+//    search.value = ''
+   fetchProducts()
+   console.log("keldi")
+})
