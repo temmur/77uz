@@ -27,7 +27,6 @@ function getProducts(){
        <img src="images/chevron-right.png" alt="">
     </div>
     </div>
-    <ul class="categoryDropDown"><li>timur</li></ul>
         `
         categoryMain.appendChild(categorySection)
 
