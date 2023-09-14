@@ -87,13 +87,13 @@ header {
 }
 
 .headerLogo {
-    width: 100%;
+    display: flex;
+    margin: 0 auto;
     max-width: 170px;
-    /* position: absolute; */
-    /* right: 43%; */
-    top: -13px;
-    padding-left: 2px;
-    padding-right: 2px;
+    position: absolute;
+    top: -15px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 0px 0px 20px 20px;
@@ -102,6 +102,7 @@ header {
     border-left: 1px solid var(--greys-grey-4, #EAEDF0);
     background: #FFF;
     box-shadow: 0px 12px 36px 0px rgba(14, 17, 22, 0.10);
+    transform: translateX(-145px);
 }
 
 .headerLogo svg {
@@ -325,11 +326,12 @@ input[type=checkbox], input[type=radio] {
 .productList{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     flex-wrap: wrap;
 }
 .productBox{
     width: 30%;
+    margin-left: 28px;
     background-color: rgba(255, 255, 255, 0.92);
     margin-bottom: 24px;
     border-radius: 10px;
@@ -582,14 +584,9 @@ font-weight: 400;
         max-width: 970px;
         margin: 0 auto;
     }
-    .headerLogo{
-        right: 40%;
-    }
 }
 @media screen and (max-width: 784px) {
-    .headerLogo{
-        right: 39%;
-    }
+   
 }
 @media  screen and (max-width: 769px) {
     .search input{
@@ -804,6 +801,9 @@ font-weight: 400;
         max-width: 380px;
         top: 0%;
 
+    }
+    .headerLogo{
+        transform: translateX(-50px);
     }
     .footerAbout{
         display: flex;
