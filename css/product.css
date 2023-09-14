@@ -804,6 +804,17 @@ font-weight: 400;
     }
 }
 @media screen and (max-width: 399px){
+    .footerAbout{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footerAbout1{git
+       display: inline-block;
+    }
+    .headerLogin button{
+        padding: 4px 8px;
+    }
     .search input{
         right: 10%;
     }
