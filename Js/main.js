@@ -28,7 +28,9 @@ function getProducts(){
         <p>${product.categories[0].productsContent.length} объявлений</p>
     </div>
     <div class="categoryIcon">
-       <img src="images/chevron-right.png" alt="">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <path d="M8 6L12 10L8 14" stroke="#B8BBBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
     </div>
     </div>
         `
@@ -47,13 +49,6 @@ function getProducts(){
         </div>
         `
         adsSection.appendChild(adsCard)
-       
-
-        // let plus = product.categories.length
-        // let plus1 = product.categories[0].productsContent.length
-        
-        // console.log(product.categories[0].women[0].categoryName)
-        // console.log(product.categories[1].categoryName)
     });
    }
 }
@@ -70,24 +65,6 @@ let currentItem = 4;
             }
             
         })
-
-        // window.addEventListener("click", function(event){
-        //     if(event.target.hasAttribute("dropDownList")){
-        //         let listCategory = event.target.closest('.categorySection')
-        //         categoryInfo={
-        //             content: listCategory.querySelector('.categoryDropDown li')
-        //         }
-
-        //     }
-        // })
-    
-
-        // window.addEventListener('click', function(event){
-        //     if(event.target.hasAttribute('language')){
-        //         let lang = document.querySelector('.mainLang')
-        //          lang.innerHTML = 
-        //     }
-        // })
 
         function changeLang(value){
             let mainLang = document.querySelector('.mainLang')
@@ -143,7 +120,7 @@ let currentItem = 4;
             console.log(modalSection)
         })
    
-        let modalOn = document.querySelector('.modal-on')
+        let modalOn = document.querySelector('.headerLogin')
         modalOn.addEventListener('click', function(){
             modalSection.style.display = "block"
         })

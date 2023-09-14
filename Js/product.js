@@ -50,14 +50,30 @@ function fetchProducts() {
                 </div>
                 </a>
                 `
-                        productSection.appendChild(productBox)
+                productSection.appendChild(productBox)
+                let colorBlock = document.querySelectorAll('.btnBlock svg path')
+                let colorGrid = document.querySelectorAll('.btnGrid svg path')
+                      
                         let btnBlock = document.querySelector(".btnBlock").addEventListener('click', function (e) {
+                           colorBlock.forEach((block)=>{
+                            block.style.stroke = "#388FF3"
+                           })
+                           colorGrid.forEach((block)=>{
+                            block.style.stroke = "rgb(213, 216, 219)"
+                           })
                             productSection.style.display = "block"
                             productBox.classList.add('active')
                         })
                         let btnGrid = document.querySelector('.btnGrid').addEventListener('click', function () {
+                            colorBlock.forEach((block)=>{
+                                block.style.stroke = "rgb(213, 216, 219)"
+                               })
+                               colorGrid.forEach((block)=>{
+                                block.style.stroke = "#388FF3"
+                               })
                             productSection.style.display = "flex"
                             productBox.classList.remove('active')
+
                         })
                     }
                 }
@@ -90,7 +106,6 @@ function getLocalStorage() {
 }
 
 getLocalStorage()
-
 let search = document.querySelector('.search')
 let searchBtn = document.querySelector('.searchBtn').addEventListener('click', function(e){
     e.preventDefault()
