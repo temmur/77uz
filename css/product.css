@@ -746,6 +746,37 @@ font-weight: 400;
     .productContent-inner .tel{
         font-size: 12px;
     }
+    .active a .productContent, .active a .productImg{
+        width: 70%;
+    }
+    .active a .productImg{
+        width: 30%;
+    }
+    .active a .productImg img{
+        width: 100%;
+    }
+    .active a .productContent{
+        display: block;
+    }
+    .active a .productContent-inner{
+        display: block;
+    }
+    .active a .productContent-inner .city{
+        font-size: 10px;
+        margin: 0 0 5px 0;
+    }
+    .active a .productContent-inner .productName{
+        font-size: 14px;
+        margin: 0 0 5px 0;
+    }
+    .active a .productContent-inner .tel{
+        font-size: 12px;
+        margin: 0 0 5px 0;
+    }
+    .active a .productContent-inner .price{
+        font-size: 14px;
+        margin: 0 0 5px 0;
+    }
 }
 @media screen and (max-width: 447px) {
     .headerContact{
@@ -791,7 +822,7 @@ font-weight: 400;
         font-size: 12px;
         width: 100%;
     }
-    .footerLogo img{
+    .footerLogo svg{
         width: 25%;
         top: 10%;
         left: 38%;
