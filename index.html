@@ -60,8 +60,12 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M16.9268 17.04L20.4 20.4M19.28 11.44C19.28 15.7699 15.7699 19.28 11.44 19.28C7.11006 19.28 3.59998 15.7699 3.59998 11.44C3.59998 7.11006 7.11006 3.59998 11.44 3.59998C15.7699 3.59998 19.28 7.11006 19.28 11.44Z" stroke="#D5D8DB" stroke-width="2" stroke-linecap="round"/>
                     </svg>
-                <input type="text" placeholder="Что вы ищете?" class="searchValue">
+                <input type="text" id="searchInput" placeholder="Что вы ищете?" class="searchValue">
                 <a href="product.html" class="searchBtn">Поиск</a>
+            </div>
+            <div class="historyList">
+                <ul id="historyList">
+                </ul>
             </div>
             <div class="categoryTitle">
                 <h1>Категории</h1>
@@ -196,7 +200,12 @@
                 <label for="Login">Логин</label>
                 <input id="Login" type="text" placeholder="Введите логин">
                 <label for="Password">Пароль</label>
-                <input form="Password" id="password"  type="text" placeholder="Введите пароль">
+               <div class="passwordValue">
+                <input form="Password" id="password"  type="password" placeholder="Введите пароль">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M20.3999 19.5L5.3999 4.5M10.1999 10.4416C9.82648 10.8533 9.5999 11.394 9.5999 11.9863C9.5999 13.2761 10.6744 14.3217 11.9999 14.3217C12.611 14.3217 13.1688 14.0994 13.5926 13.7334M20.4387 14.3217C21.2649 13.0848 21.5999 12.0761 21.5999 12.0761C21.5999 12.0761 19.4153 5.1 11.9999 5.1C11.5836 5.1 11.1838 5.12199 10.7999 5.16349M17.3999 17.3494C16.0225 18.2281 14.2492 18.8495 11.9999 18.8127C4.67683 18.693 2.3999 12.0761 2.3999 12.0761C2.3999 12.0761 3.45776 8.69808 6.5999 6.64332" stroke="#8E9297" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+               </div>
                 <a href="">Забыли пароль?</a>
             </form>
         <div class="registerCard-btn">
