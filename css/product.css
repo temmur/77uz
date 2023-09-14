@@ -13,7 +13,6 @@ body{
 
 header {
     background-color: rgba(255, 255, 255, 0.92);
-    position: relative;
     padding: 15px 0;
 }
 
@@ -27,6 +26,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative ;
 }
 
 .headerInfo,
@@ -90,8 +90,8 @@ header {
     width: 100%;
     max-width: 170px;
     position: absolute;
-    left: 45%;
-    top: 0%;
+    right: 43%;
+    top: -13px;
     padding-left: 2px;
     padding-right: 2px;
     padding-top: 10px;
@@ -102,10 +102,11 @@ header {
     border-left: 1px solid var(--greys-grey-4, #EAEDF0);
     background: #FFF;
     box-shadow: 0px 12px 36px 0px rgba(14, 17, 22, 0.10);
+    
 }
 
 .headerLogo svg {
-    width: 80%;
+    width: 100%;
     display: flex;
     margin: 0 auto;
 }
@@ -586,8 +587,15 @@ font-weight: 400;
         max-width: 970px;
         margin: 0 auto;
     }
+    .headerLogo{
+        right: 40%;
+    }
 }
-
+@media screen and (max-width: 784px) {
+    .headerLogo{
+        right: 39%;
+    }
+}
 @media  screen and (max-width: 769px) {
     .search input{
         right: 23%
@@ -610,6 +618,7 @@ font-weight: 400;
         max-width: 750px;
         margin: 0 auto;
     }
+    
 }
 @media  screen and (max-width: 685px) {
     .search input{
@@ -619,12 +628,15 @@ font-weight: 400;
         right: 19.5%;
     }
     .headerLogo{
-        width: 70px;
-        top: 20%;
-        border-radius: 10px;
-    }
-    .headerLogo img{
         width: 100%;
+        max-width: 116px;
+        top: 0%;
+        border-radius: 20px;
+        padding: 12px 12px;
+    }
+    .headerLogo svg{
+        width: 100%;
+        max-width: 92px;
     }
     .container{
         width: 100%;
@@ -679,8 +691,6 @@ font-weight: 400;
         max-width: 540px;
         margin: 0 auto;
     }
-}   
-@media screen and (max-width: 600px) {
     .productBox{
         width: 45%;
     }
@@ -696,7 +706,8 @@ font-weight: 400;
        width: 100%;
        transform: translateY(15px);
     }
-}
+}   
+
 @media screen and (max-width: 481px) {
     .searchInput {
         display: none;
@@ -712,12 +723,28 @@ font-weight: 400;
     }
     .productSection h1{
         font-size: 25px;
+        margin-top: 25px;
     }
     .headerContact{
         display: none;
     }
     .pageList{
         display: none;
+    }
+    .productContent{
+        padding: 8px;
+    }
+    .productContent-inner .productName{
+        font-size: 14px;
+    }
+    .productContent-inner .city{
+        font-size: 10px;
+    }
+    .productContent-inner .price{
+        font-size: 14px;
+    }
+    .productContent-inner .tel{
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 447px) {
@@ -728,13 +755,19 @@ font-weight: 400;
         display: flex;
         flex-wrap: wrap;
     }
+    .footerLogo svg{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 20px
+    }
     .footerAbout1{
         width: 50%;
     }
     .filterSection{
         width: 100%;
     }
-    .footerLogo img{
+    .footerLogo svg{
         left: 39%;
         top: 5%;
     }
