@@ -795,12 +795,13 @@ font-weight: 400;
     }
 
     .headerLogo {
-        width: 70px;
-        top: 20%;
+        width: 100px;
+        top: 0;
         border-radius: 10px;
+        padding: 0px 12px;
     }
 
-    .headerLogo img {
+    .headerLogo svg {
         width: 100%;
     }
 
@@ -855,7 +856,7 @@ font-weight: 400;
         width: 40%;
         margin: 10px 20px;
     }
-
+    
     .header {
         padding: 0;
     }
@@ -926,6 +927,30 @@ font-weight: 400;
         width: 100%;
         max-width: 540px;
         margin: 0 auto;
+    }
+    .ads-productName{
+        font-size: 16px;
+    }
+    .categoryContent p{
+        font-size: 13px;
+    }
+    .categoryLogo img{
+        width: 45px;
+    }
+    .adsContent {
+        padding: 8px;
+    }
+    .adsContent .adsCity{
+        font-size: 10px;
+    }
+    .ads-card:hover .ads-productName{
+        font-size: 16px;
+    }.readMore {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    .readMore svg{
+        width: 15px;
     }
 }
 

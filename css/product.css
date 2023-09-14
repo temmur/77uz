@@ -160,13 +160,11 @@ header {
    
 }
 .filterSection{
-    width: 100%;
-    max-width: 278px;
+    width: 20%;
     background-color: rgba(255, 255, 255, 0.92);
     border-radius: 10px;
     padding: 16px ;
     margin-right: 60px;
-    min-height: 500px;
     height: 100%;
 }
 
@@ -370,7 +368,6 @@ input[type=checkbox], input[type=radio] {
 .productName{
     color: var(--Black, #16191D);
     text-overflow: ellipsis;
-    whitespace: nowrap;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -548,10 +545,9 @@ font-weight: 400;
         display: none;
         position: fixed;
         z-index: 2;
+        height: 100%;
+        max-height: 750px;
         top: 10%;
-        height: 100%;
-        max-height: 600px;
-        height: 100%;
     }
     .productSection{
         width: 90%;
@@ -804,12 +800,16 @@ font-weight: 400;
     }
 }
 @media screen and (max-width: 399px){
+    .filterSection{
+        width: 100%;
+        max-width: 380px;
+    }
     .footerAbout{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .footerAbout1{git
+    .footerAbout1{
        display: inline-block;
     }
     .headerLogin button{
