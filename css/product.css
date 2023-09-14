@@ -546,8 +546,8 @@ font-weight: 400;
         position: fixed;
         z-index: 2;
         height: 100%;
-        max-height: 750px;
         top: 10%;
+        max-height: 750px;
     }
     .productSection{
         width: 90%;
@@ -803,6 +803,8 @@ font-weight: 400;
     .filterSection{
         width: 100%;
         max-width: 380px;
+        top: 5%;
+
     }
     .footerAbout{
         display: flex;
@@ -838,8 +840,4 @@ font-weight: 400;
         top: 10%;
         left: 38%;
     }
-    .filterSection{
-        top: 15%;
-    }
-    
 }
