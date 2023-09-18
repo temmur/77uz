@@ -799,6 +799,30 @@ font-weight: 400;
     }
 }
 @media screen and (max-width: 399px){
+    .headerLogo{
+        width: 100;
+        max-width: 116px;
+        padding: 0px;
+    }
+    .headerLogo {
+        display: flex;
+        justify-content: center;
+    }
+    .productImg img{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .productContent-inner p{
+        margin-top: 2px;
+    }
+    .productContent-inner .productName{
+        margin-bottom: 5px;
+    }
+    .productContent-inner .tel{
+        margin: 0;
+    }
     .filterSection{
         width: 100%;
         max-width: 380px;
