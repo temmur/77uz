@@ -799,14 +799,18 @@ font-weight: 400;
     }
 }
 @media screen and (max-width: 399px){
+    header{
+        margin: 0;
+    }
     .headerLogo{
         width: 100;
         max-width: 116px;
         padding: 0px;
-    }
-    .headerLogo {
         display: flex;
         justify-content: center;
+        cursor: pointer;
+        top: -12px;
+        margin: 0;
     }
     .productImg img{
         width: 80%;
