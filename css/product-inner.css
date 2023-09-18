@@ -782,9 +782,11 @@ footer{
         right: 19.5%;
     }
     .headerLogo{
-        width: 70px;
+        width: 100%;
+        max-width: 116px;
         top: 20%;
         border-radius: 10px;
+        transform: translateX(-30%);
     }
     .headerLogo img{
         width: 100%;
