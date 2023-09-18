@@ -236,6 +236,13 @@ header {
     margin: 12px 0;
 }
 
+
+
+.desc{
+    padding-top: 100px;
+    width: 100%;
+    background-color: red;
+}
 .categorySection-inner {
     display: flex;
     align-items: center;
@@ -788,16 +795,18 @@ footer {
   display: none;
 }
 .historyList ul{
+    position: relative;
     border-radius: 12px;
     padding: 16px ;
     background: var(--White, #FFF);
     width: 100%;
     max-width: 580px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     margin-top: 8px;
     height: 100%;
     max-height: 240px;
-    position: fixed;
     top: 26%;
 }
 .historyList ul li{
@@ -813,7 +822,51 @@ footer {
     padding-bottom: 5px;
 }
 
-
+/* category drop down list */
+/* .categoryDropDown ul{
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+.categoryDropDown ul li{
+    margin: 12px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.categoryDropDown ul li a{
+    padding-right: 10px;
+}
+.categoryDropDown li a{
+        color: var(--Black, #16191D);
+        text-decoration: none;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; 
+} */
+.dropdown .categoryDropDown {
+    display: flex;
+    border: 1px solid red;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.categoryDropDown li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+.categoryDropDown li a{
+    text-decoration: none;
+    color: black;
+}
+/* responsive */
 @media screen and (max-width: 1142px) {
     .search input {
         right: 30%;
@@ -898,10 +951,10 @@ footer {
     .categoryContent p {
         font-size: 10px;
     }
-
-    .categorySection {
-        margin: 8px 10px;
+    .categoryMain{
+        justify-content: space-between;
     }
+    
 
     .categoryLogo {
         width: 40px;
@@ -913,6 +966,8 @@ footer {
 
     .categorySection {
         padding: 12px 0;
+        width: 45%;
+        margin: 8px 10px;
     }
 }
 
@@ -1015,7 +1070,11 @@ footer {
         width: 15px;
     }
 }
-
+@media screen and (max-width: 489px) {
+    .categorySection{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 447px) {
     .headerContact {
         display: none;

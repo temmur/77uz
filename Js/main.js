@@ -4,13 +4,13 @@ let adsSection = document.querySelector('.ads-inner')
 let readMore = document.querySelector('.readMore')
 let dropDownBoxList = document.querySelector('.drop-down-box-list')
 
-fetch('Js/products.json').then(response=> response.json()).then(data =>{
+fetch('Js/products.json').then(response => response.json()).then(data => {
     productData = data
     getProducts()
 })
 
-
-function renderHistory(list){
+let arr = []
+function renderHistory(list) {
     let el = document.querySelector("#historyList");
     el.innerHTML = ""
     list.forEach(element => {
@@ -26,38 +26,60 @@ function renderHistory(list){
 }
 
 
-function getProducts(){
-   categoryMain.innerHTML = '';
-   adsSection.innerHTML = ''
-   if(productData !== null){
-    productData.forEach((product,index) => {
-        categorySection = document.createElement('div');
-        categorySection.classList.add('categorySection')
-        categorySection.setAttribute("dropDownList", "dropDownLists")
-        categorySection.innerHTML=`
+function getProducts() {
+    categoryMain.innerHTML = '';
+    adsSection.innerHTML = ''
+    if (productData !== null) {
+        productData.forEach((product, id) => {
+            let c = ``
 
-        <div class="dropdown">
-        <div class="categorySection-inner">
-        <div class="categoryLogo">
-        <img src="${product.categoryIcon}" alt="">
-    </div>
-    <div class="categoryContent">
-        <h3>${product.categoryName}</h3>
-        <p>${product.categories[0].productsContent.length} объявлений</p>
-    </div>
-    <div class="categoryIcon">
-       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-<path d="M8 6L12 10L8 14" stroke="#B8BBBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-    </div>
-    </div>
+            product.categories.forEach((el) => {
+                c += `<li><a href="">${el.category}</a><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+            <path d="M8.33337 6L12.3334 10L8.33337 14" stroke="#B8BBBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></li>`
+            })
+
+            // categorySection.setAttribute("dropDownList", "dropDownLists")
+            let categorySection = `
+        
+            <div class='categorySection'>
+                <div class="dropdown" onclick='openDesc(${id})'>
+                    <div class="categorySection-inner">
+                        <div class="categoryLogo">
+                            <img src="${product.categoryIcon}" alt="">
+                        </div>
+                        <div class="categoryContent">
+                            <h3>${product.categoryName}</h3>
+                            <p>${product.categories[0].productsContent.length} объявлений</p>
+                        </div>
+                        <div class="categoryIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M8 6L12 10L8 14" stroke="#B8BBBD" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+            
+                </div>
+       </div>
+
+     
+            <ul  class="categoryDropDown hidden desc" id='desc-${id}'>
+            ${c}
+             </ul>
+           
+       
         `
-        categoryMain.appendChild(categorySection)
+
+     
+
+            listDownFunc(product)
+            categoryMain.innerHTML += categorySection
 
 
-        adsCard= document.createElement('div')
-        adsCard.classList.add('ads-card')
-        adsCard.innerHTML= `
+            adsCard = document.createElement('div')
+            adsCard.classList.add('ads-card')
+            adsCard.innerHTML = `
         <img src="https://assets.ajio.com/medias/sys_master/root/20220530/6OxA/6294bd8eaeb26921aff3ba3d/-1117Wx1400H-441024764-khaki-MODEL.jpg" alt="">
         <div class="adsContent">
             <span class="adsCity">г. Ташкент</span>
@@ -66,120 +88,139 @@ function getProducts(){
             <p class="ads-productPrice">250 000<span>uzs</span></p>
         </div>
         `
-        adsSection.appendChild(adsCard)
-    });
-   }
+            adsSection.appendChild(adsCard)
+        });
+    }
 }
 
 let currentItem = 4;
-        readMore.addEventListener('click', function(){
-            let adsBox = [...document.querySelectorAll('.ads .container .ads-inner .ads-card')]
-            for(let i = currentItem; i<currentItem + 4; i++){
-                adsBox[i].style.display = 'inline-block'
-            }
-            currentItem +=4
-            if(currentItem >= adsBox.length){
-                readMore.style.display = 'none'
-            }
-            
-        })
+readMore.addEventListener('click', function () {
+    let adsBox = [...document.querySelectorAll('.ads .container .ads-inner .ads-card')]
+    for (let i = currentItem; i < currentItem + 4; i++) {
+        adsBox[i].style.display = 'inline-block'
+    }
+    currentItem += 4
+    if (currentItem >= adsBox.length) {
+        readMore.style.display = 'none'
+    }
 
-        function changeLang(value){
-            let mainLang = document.querySelector('.mainLang')
-            mainLang.innerHTML = value
-        }
+})
 
-        let search = document.querySelector('.searchValue')
+function changeLang(value) {
+    let mainLang = document.querySelector('.mainLang')
+    mainLang.innerHTML = value
 
-        let searchBtn = document.querySelector('.searchBtn').addEventListener('click', function(e){
-            e.preventDefault()
-           let searchValue = search.value
-           if(searchValue == ""){
-            return 
-           }
-           localStorage.setItem('value', searchValue)
-           search.value = ''
-           
-           historyArray = localStorage.getItem("history") ? JSON.parse(localStorage.getItem("history")) : []
-           historyArray.unshift(searchValue)
-           
-           let history = historyArray.slice(0,7);
-            
-           localStorage.setItem("history",JSON.stringify(history))
+}
 
-           window.location.href = "product.html"
-        })
-        
-        
-        $(":input").inputmask();
+let search = document.querySelector('.searchValue')
 
-        $("#phone").inputmask({"mask": "(999) 999-9999"});
+let searchBtn = document.querySelector('.searchBtn').addEventListener('click', function (e) {
+    e.preventDefault()
+    let searchValue = search.value
+    if (searchValue == "") {
+        return
+    }
+    localStorage.setItem('value', searchValue)
+    search.value = ''
 
-    function login(){
-        let username = $("#Login").val()
-        let password = $("#password").val()
-        let inputError = document.querySelectorAll(".registerCard form input")
-        fetch('Js/userData.json').then(response => response.json())
+    historyArray = localStorage.getItem("history") ? JSON.parse(localStorage.getItem("history")) : []
+    historyArray.unshift(searchValue)
+
+    let history = historyArray.slice(0, 7);
+
+    localStorage.setItem("history", JSON.stringify(history))
+
+    window.location.href = "product.html"
+})
+
+
+$(":input").inputmask();
+
+$("#phone").inputmask({ "mask": "(999) 999-9999" });
+
+function login() {
+    let username = $("#Login").val()
+    let password = $("#password").val()
+    let inputError = document.querySelectorAll(".registerCard form input")
+    fetch('Js/userData.json').then(response => response.json())
         .then(data => {
             userList = data
-           for (let i = 0;i<userList.length;i++){
-            let user = userList[i]
-          
+            for (let i = 0; i < userList.length; i++) {
+                let user = userList[i]
 
-            if(user.username == username && user.password == password){
-                document.querySelector('.register').style.display = "none"
-                return " "
+
+                if (user.username == username && user.password == password) {
+                    document.querySelector('.register').style.display = "none"
+                    return " "
+                }
             }
-           }
-           console.log("user yoki parol xato")
-          let passError = document.querySelector('.passwordValue')
-          let userError = document.querySelector('#Login')
-          userError.classList.add('valueError')
-          passError.classList.add('valueError')
+            console.log("user yoki parol xato")
+            let passError = document.querySelector('.passwordValue')
+            let userError = document.querySelector('#Login')
+            userError.classList.add('valueError')
+            passError.classList.add('valueError')
         })
-        
-    }
 
-    $("#submit").click(el=>{
-        login()
+}
+
+$("#submit").click(el => {
+    login()
+})
+
+function modalFunc() {
+
+    let closeModal = document.querySelector('.fa-xmark')
+    let modalSection = document.querySelector('.register')
+    closeModal.addEventListener('click', function () {
+        modalSection.style.display = 'none'
+        console.log(modalSection)
     })
 
-    function modalFunc(){
+    let modalOn = document.querySelector('.headerLogin')
+    modalOn.addEventListener('click', function () {
+        modalSection.style.display = "block"
+    })
 
-        let closeModal = document.querySelector('.fa-xmark')
-        let modalSection = document.querySelector('.register')
-        closeModal.addEventListener('click', function(){
-            modalSection.style.display = 'none'
-            console.log(modalSection)
-        })
-   
-        let modalOn = document.querySelector('.headerLogin')
-        modalOn.addEventListener('click', function(){
-            modalSection.style.display = "block"
-        })
 
-        
+}
+modalFunc()
+
+
+
+let passwordVal = document.querySelector(".passwordValue input")
+
+let hidePass = document.querySelector('.passwordValue svg').addEventListener('click', function () {
+    if (passwordVal.type === "password") {
+        passwordVal.type = "text";
+    } else {
+        passwordVal.type = "password";
     }
-    modalFunc()
+})
+
+let historySection = document.querySelector('.historyList')
+
+$("#searchInput").click(() => {
+    renderHistory(JSON.parse(localStorage.getItem("history")))
+    historySection.style.display = "block"
+})
 
 
-
-    let passwordVal = document.querySelector(".passwordValue input")
-
-    let hidePass = document.querySelector('.passwordValue svg').addEventListener('click', function(){
-        if (passwordVal.type === "password") {
-            passwordVal.type = "text";
-          } else {
-            passwordVal.type = "password";
-          }
-       })
-    
-       $("#searchInput").click(()=>{
-        renderHistory(JSON.parse(localStorage.getItem("history")))
-       })
-
-
-window.addEventListener('dblclick', function(){
-    let historySection = document.querySelector('.historyList')
+historySection.addEventListener('click', function () {
     historySection.style.display = 'none'
 })
+
+function listDownFunc(product) {
+
+}
+
+let nowCatergory = 1
+
+function openDesc(id) {
+    document.querySelector(`#desc-${nowCatergory}`).classList.add("hidden");
+
+    nowCatergory = id
+    let el = document.querySelector(`#desc-${id}`)
+    el.classList.remove("hidden")
+}
+
+
