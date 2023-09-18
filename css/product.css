@@ -326,12 +326,11 @@ input[type=checkbox], input[type=radio] {
 .productList{
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .productBox{
     width: 30%;
-    margin-left: 28px;
     background-color: rgba(255, 255, 255, 0.92);
     margin-bottom: 24px;
     border-radius: 10px;
@@ -399,6 +398,7 @@ input[type=checkbox], input[type=radio] {
 }
 .active{
     width: 100%;
+    margin: 0 0 10px 0;
 }
 .active a{
    width: 100%;
@@ -465,7 +465,9 @@ padding: 4px 8px;
     font-weight: 600;
     line-height: 130%; /* 18.2px */
 }
-
+.hidden{
+    border: 1px solid red;
+}
 
 /* footer-section */
 
