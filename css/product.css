@@ -486,13 +486,11 @@ footer {
 }
 
 .footerLogo svg {
-    width: 100%;
-    max-width: 122px;
-    height: 100%;
-    max-height: 64px;
+    width: 100px;
     position: relative;
-    left: 0%;
-    top: -40px;
+    transform: translateX(0%);
+    top: 0px;
+    margin-bottom: 10px;
 }
 
 .footerContent {
@@ -1145,11 +1143,16 @@ font-weight: 400;
     }
     .footerAbout1{
         font-size: 12px;
-        width: 100%;
+        width: 50%;
     }
-    .footerLogo svg{
-        width: 25%;
-        top: 10%;
-        left: 38%;
+    footer{
     }
+    .footerLogo img{
+        width: 20%;
+    }
+    .footerTitle{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    
 }
