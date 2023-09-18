@@ -14,7 +14,7 @@ function renderHistory(list) {
     let el = document.querySelector("#historyList");
     el.innerHTML = ""
     list.forEach(element => {
-        el.innerHTML += `<li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        el.innerHTML += `<li class="history-list"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path d="M9.57924 2.26159C9.75138 1.9128 10.2487 1.9128 10.4209 2.26159L12.6492 6.77669C12.7176 6.9152 12.8497 7.0112 13.0026 7.03341L17.9853 7.75744C18.3702 7.81337 18.5239 8.28639 18.2453 8.55788L14.6398 12.0724C14.5292 12.1802 14.4787 12.3355 14.5049 12.4878L15.356 17.4504C15.4218 17.8337 15.0194 18.126 14.6751 17.9451L10.2184 15.602C10.0817 15.5302 9.9184 15.5302 9.78169 15.602L5.32501 17.9451C4.98074 18.126 4.57837 17.8337 4.64412 17.4504L5.49526 12.4878C5.52137 12.3355 5.4709 12.1802 5.3603 12.0724L1.75478 8.55788C1.47625 8.28639 1.62995 7.81337 2.01486 7.75744L6.99757 7.03341C7.15042 7.0112 7.28255 6.9152 7.35091 6.77669L9.57924 2.26159Z" stroke="#FAAC36" stroke-width="1.5" stroke-linejoin="round"/>
         </svg>
         ${element}
@@ -24,6 +24,7 @@ function renderHistory(list) {
     </li>`
     });
 }
+
 
 
 function getProducts() {
@@ -70,9 +71,6 @@ function getProducts() {
            
        
         `
-
-     
-
             listDownFunc(product)
             categoryMain.innerHTML += categorySection
 
@@ -80,13 +78,14 @@ function getProducts() {
             adsCard = document.createElement('div')
             adsCard.classList.add('ads-card')
             adsCard.innerHTML = `
+        <a  href="product-inner.html">
         <img src="https://assets.ajio.com/medias/sys_master/root/20220530/6OxA/6294bd8eaeb26921aff3ba3d/-1117Wx1400H-441024764-khaki-MODEL.jpg" alt="">
         <div class="adsContent">
             <span class="adsCity">г. Ташкент</span>
             <h4 class="ads-productName">Brioni whyskey</h4>
             <p class="adsNum">Tel: +998977777777</p>
             <p class="ads-productPrice">250 000<span>uzs</span></p>
-        </div>
+        </div></a>
         `
             adsSection.appendChild(adsCard)
         });
@@ -217,7 +216,6 @@ let nowCatergory = 1
 
 function openDesc(id) {
     document.querySelector(`#desc-${nowCatergory}`).classList.add("hidden");
-
     nowCatergory = id
     let el = document.querySelector(`#desc-${id}`)
     el.classList.remove("hidden")

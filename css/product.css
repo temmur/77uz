@@ -530,7 +530,288 @@ font-weight: 400;
     width: 20%;
     margin: 0 auto;
 }
+/* registration section */
 
+/* User login section */
+.register {
+    background-color: rgba(0, 0, 0, 0.28);
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    height: 100%;
+    display: none;
+}
+
+.registerCard {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    max-width: 379px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+}
+
+.registerCard-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.registerCard-title h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.registerCard-title i {
+    font-size: 20px;
+}
+
+.registerCard p,
+.createAccount p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    color: #8E9297;
+    margin: 10px 0;
+}
+
+.registerCard form label,
+.registerCard form a {
+    display: block;
+    margin: 5px 0;
+}
+
+.registerCard form {
+    margin-bottom: 60px;
+}
+
+.registerCard form label {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: #63676C;
+    margin-top: 16px;
+}
+
+.registerCard form input {
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    border: transparent;
+    background-color: rgb(240, 243, 247);
+    outline: none;cursor: pointer;
+}
+
+.registerCard form input::placeholder {
+    text-transform: inherit;
+    color: #B8BBBD;
+    font-size: 14px;
+}
+
+.registerCard form a {
+    color: #388FF3;
+    margin: 8px 0;
+    text-decoration: none;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.registerCard-btn button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    border: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.registerCard-btn .loginActive {
+    background-color: #388FF3;
+    color: white;
+}
+
+.registerCard-btn .logon {
+    color: #388FF3;
+    background-color: white;
+    border: 1px solid #388FF3;
+}
+
+.registerCard-btn p {
+    font-size: 12px;
+    color: #8E9297;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+}
+.passwordValue{
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+    border: transparent;
+    background-color: rgb(240, 243, 247);
+    outline: none;
+}
+.passwordValue svg{
+    width: 100%;
+   max-width: 24px;
+}
+.valueError { 
+    border: 1px solid red !important;
+}
+.registerCard-btn p::before {
+    content: "";
+    display: block;
+    width: 95px;
+    height: 1px;
+    background: #EAEDF0;
+    left: 0;
+    top: 50%;
+    position: absolute;
+
+}
+
+.registerCard-btn p::after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 95px;
+    height: 1px;
+    background: #EAEDF0;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.createAccount {
+    width: 100%;
+    max-width: 379px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+}
+
+.createAccount form label {
+    display: block;
+}
+
+.createAccount form input {
+    width: 100%;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    border: transparent;
+    background-color: rgb(240, 243, 247);
+    outline: none;
+}
+
+.createAccount form label {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: #63676C;
+    margin-top: 16px;
+}
+
+.createAccount form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(240, 243, 247);
+    border: none;
+}
+
+.phone-input {
+    border-radius: 8px;
+    background: var(--greys-grey-bg, #F0F3F7);
+    display: flex;
+    align-items: center;
+}
+
+.phone-input span {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.phone-input input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 12px 0;
+}
+
+.createAccount form {
+    margin-bottom: 40px;
+}
+
+.createCard-btn p {
+    font-size: 12px;
+    color: #8E9297;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+}
+
+.createCard-btn p::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #EAEDF0;
+    left: 0;
+    top: 50%;
+    position: absolute;
+
+}
+
+.createCard-btn p::after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 40px;
+    height: 1px;
+    background: #EAEDF0;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.createCard-btn .loginActive {
+    background-color: #388FF3;
+    color: white;
+    width: 100%;
+    padding: 16px;
+    border: transparent;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.createCard-btn .logon {
+    width: 100%;
+    color: #388FF3;
+    background-color: white;
+    border: 1px solid #388FF3;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.createAccount {
+    display: none;
+}
 @media screen and (max-width: 1142px) {
     .search input{
         right: 30%;
@@ -802,6 +1083,7 @@ font-weight: 400;
     header{
         margin: 0;
     }
+    
     .headerLogo{
         width: 100;
         max-width: 116px;

@@ -108,14 +108,6 @@
                         <input type="checkbox" class="option-input checkbox" CHECKED />
                         Телефон
                       </label>
-                      <label>
-                        <input type="checkbox" class="option-input checkbox" CHECKED />
-                        Планшет
-                      </label>
-                      <label>
-                        <input type="checkbox" class="option-input checkbox" CHECKED />
-                        Самокат
-                      </label>
                 </div>
                 <div class="btnFilter">
                     <button class=btn>Применить фильтр</button>
@@ -234,6 +226,72 @@
             </div>
         </div>
     </footer>
+
+    <!-- registration section -->
+
+    <div class="register">
+        <div class="registerCard">
+            <div class="registerCard-title">
+                <h2>Добро пожаловать!</h2>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <p>Войти в систему чтобы торговать в системе</p>
+            <form action="">
+                <label for="Login">Логин</label>
+                <input id="Login" type="text" placeholder="Введите логин">
+                <label for="Password">Пароль</label>
+                <div class="passwordValue">
+                    <input form="Password" id="password" type="password" placeholder="Введите пароль">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M20.3999 19.5L5.3999 4.5M10.1999 10.4416C9.82648 10.8533 9.5999 11.394 9.5999 11.9863C9.5999 13.2761 10.6744 14.3217 11.9999 14.3217C12.611 14.3217 13.1688 14.0994 13.5926 13.7334M20.4387 14.3217C21.2649 13.0848 21.5999 12.0761 21.5999 12.0761C21.5999 12.0761 19.4153 5.1 11.9999 5.1C11.5836 5.1 11.1838 5.12199 10.7999 5.16349M17.3999 17.3494C16.0225 18.2281 14.2492 18.8495 11.9999 18.8127C4.67683 18.693 2.3999 12.0761 2.3999 12.0761C2.3999 12.0761 3.45776 8.69808 6.5999 6.64332"
+                            stroke="#8E9297" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <a href="">Забыли пароль?</a>
+            </form>
+            <div class="registerCard-btn">
+                <button class="loginActive" id="submit">Войти</button>
+                <p>Хотите стать продавцом?</p>
+                <button class="logon">Подать заявку</button>
+            </div>
+        </div>
+        <!-- create account -->
+        <div class="createAccount">
+            <div class="registerCard-title">
+                <h2>Добро пожаловать!</h2>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <p>Войти в систему чтобы торговать в системе</p>
+            <form action="">
+                <label for="FullName">Ф.И.О</label>
+                <input id="Login" type="text" placeholder="Введите вашу Ф.И.О.">
+                <label for="Password">Название продукта</label>
+                <input form="Password" type="text" placeholder="Введите название продукта">
+                <label for="cars">Категория</label>
+                <select name="cars" id="cars">
+                    <option value="refregirator">Холодильник</option>
+                    <option value="shelf">Шкаф</option>
+                    <option value="monitor">Монитор</option>
+                    <option value="car">Машина</option>
+                </select>
+                <label for="Categoryy">Телефон номер</label>
+                <div class="phone-input">
+                    <span>+998</span>
+                    <input type="text" placeholder="(00)-000-00-00" data-inputmask="'mask': '(99) 999-99-99'">
+                </div>
+            </form>
+            <div class="createCard-btn">
+                <button class="loginActive">Подать заявку</button>
+                <p>Если вы продавец, войдите на платформу</p>
+                <button class="logon">Войти</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js
+    "></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js
+    "></script>
     <script src="Js/product.js"></script>
 </body>
 </html>
