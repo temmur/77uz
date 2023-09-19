@@ -368,8 +368,7 @@ footer{
 }
 @media screen and (max-width: 891px){
     .container{
-        width: 100%;
-        max-width: 800px;
+        max-width: 90%;
         margin: 0 auto;
     }
     .products-inner{
@@ -407,8 +406,7 @@ footer{
         right: 23.5%;
     }
     .container{
-        width: 100%;
-        max-width: 750px;
+        max-width: 90%;
         margin: 0 auto;
     }
     .productTop-section{
@@ -456,8 +454,7 @@ footer{
         width: 100%;
     }
     .container{
-        width: 100%;
-        max-width: 670px;
+        max-width: 90%;
         margin: 0 auto;
     }
 }
@@ -477,8 +474,7 @@ footer{
         padding: 0;
     }
     .container{
-        width: 100%;
-        max-width: 575px;
+        max-width: 90%;
         margin: 0 auto;
     }
     .headerLang p{
@@ -507,11 +503,6 @@ footer{
         top: 105px;
         right: 20%;
     }
-    .container{
-        width: 100%;
-        max-width: 540px;
-        margin: 0 auto;
-    }
     .main-inner{
         display: flex;
         flex-direction: column;
@@ -537,8 +528,7 @@ footer{
         right: 12%;
     }
     .container{
-        width: 100%;
-        max-width: 380px;
+        max-width: 90%;
         margin: 0 auto;
     }
     .footerAbout{

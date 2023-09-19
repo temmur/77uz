@@ -708,7 +708,6 @@ footer{
 }
 @media screen and (max-width: 829px) {
     .container{
-        width: 100%;
         max-width: 90%;
         margin: 0 auto;
     }
@@ -792,7 +791,6 @@ footer{
         width: 100%;
     }
     .container{
-        width: 100%;
         max-width: 90%;
         margin: 0 auto;
     }
@@ -800,17 +798,13 @@ footer{
 
 @media screen and (max-width: 665px) {
     .container{
-        width: 100%;
         max-width: 90%;
         margin: 0 auto;
     }
 }
 @media screen and (max-width: 600px) {
-    .header{
-        padding: 0;
-    }
+    
     .container{
-        width: 100%;
         max-width: 90%;
         margin: 0 auto;
     }
@@ -842,9 +836,6 @@ footer{
     }
 }   
 @media screen and (max-width: 447px) {
-    .productContent h3{
-    
-    }
     .headerContact{
         display: none;
     }
@@ -900,7 +891,6 @@ footer{
         right: 12%;
     }
     .container{
-        width: 100%;
         max-width: 90%;
         margin: 0 auto;
     }

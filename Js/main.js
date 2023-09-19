@@ -96,12 +96,16 @@ let currentItem = 4;
 readMore.addEventListener('click', function () {
     let adsBox = [...document.querySelectorAll('.ads .container .ads-inner .ads-card')]
     for (let i = currentItem; i < currentItem + 4; i++) {
+        if (i >= adsBox.length) {
+            readMore.style.display = 'none'
+        }
         adsBox[i].style.display = 'inline-block'
     }
     currentItem += 4
-    if (currentItem >= adsBox.length) {
-        readMore.style.display = 'none'
-    }
+    // if (currentItem >= adsBox.length) {
+    //     readMore.style.display = 'none'
+    // }
+    
 
 })
 

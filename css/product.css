@@ -1134,8 +1134,7 @@ font-weight: 400;
         right: 12%;
     }
     .container{
-        width: 100%;
-        max-width: 380px;
+       max-width: 95%;
         margin: 0 auto;
     }
     .footerAbout{
@@ -1144,8 +1143,6 @@ font-weight: 400;
     .footerAbout1{
         font-size: 12px;
         width: 50%;
-    }
-    footer{
     }
     .footerLogo img{
         width: 20%;
