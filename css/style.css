@@ -1126,7 +1126,21 @@ footer {
         object-fit: cover;
 
     }
-
+    .ads-title{
+        margin: 10px 0;
+    } 
+    .ads-title h3{
+        font-size: 25px;
+    }
+    .ads-title p{
+        font-size: 14px;
+    }
+    .categoryContent h3{
+        font-size: 16px;
+    }
+    .categoryContent p{
+        font-size: 14px;
+    }
     
 }
 
